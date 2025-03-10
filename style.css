@@ -1,0 +1,280 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(216, 218, 220);
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+* {
+  color: black;
+}
+h1 {
+  text-align: center;
+  color: rgb(77, 6, 6);
+}
+
+header {
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+}
+header img {
+  width: 1200px auto;
+}
+header h6 {
+  color: #000000;
+  position: absolute;
+  margin-top: -300px;
+  width: 300px;
+  margin-left: 550px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #000000;
+}
+
+.gallery {
+  padding: 50px 10px;
+  background: white;
+}
+
+.gallery h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+.gallery_btn,
+.gallery_btn a {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  background-color: rgb(77, 6, 6);
+  color: aliceblue;
+  border-radius: 7px;
+}
+
+/* aabout */
+.aabout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.aabout-box-2 img {
+  width: 400px;
+}
+
+/* как ззакзать  */
+
+.order {
+  background: white;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+}
+
+.order p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+.order ol {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.order ol li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.order ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.order ul li {
+  font-size: 16px;
+  color: #777;
+}
+
+.contact-info {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-call {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #d9534f;
+  margin-top: 10px;
+}
+strong {
+  color: #210201;
+}
+
+/* контакты */
+.contacts {
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contacts h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contacts p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contacts a {
+  color: #00000069;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .order {
+    padding: 30px 10px;
+  }
+
+  .order h2 {
+    font-size: 24px;
+  }
+
+  .order p,
+  .order ol li {
+    font-size: 16px;
+  }
+  .contacts {
+    padding: 30px 10px;
+  }
+
+  .contacts h2 {
+    font-size: 24px;
+  }
+
+  .contacts p,
+  .contacts ul li {
+    font-size: 16px;
+  }
+  header h6 {
+    margin-left: 60px;
+    background-color: #777777c5;
+
+    margin-top: -220px;
+  }
+}
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.scroll-top:hover {
+  background: #ffaa00;
+}
+
+.scroll-top.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
